@@ -1,0 +1,235 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Hafsa Home</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="{{company_data.logo.url}}">
+
+    <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/all.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/icofont.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/lightcase.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/swiper.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+</head>
+
+<body>
+
+    <!-- preloader start here -->
+    <div class="preloader">
+        <div class="preloader-inner">
+            <div class="preloader-icon">
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+    <!-- preloader ending here -->
+
+    <!-- Header Section Starts Here -->
+    <header class="header-3 pattern-1">
+        <div class="container">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-xl-3 col-12">
+                    <div class="mobile-menu-wrapper d-flex flex-wrap align-items-center justify-content-between">
+                        <div class="header-bar d-lg-none">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="logo">
+                            <a href="index.html">
+                                <img src="{{company_data.logo.url}}" alt="logo">
+                                
+                            </a>
+                        </div>
+                        <div class="ellepsis-bar d-lg-none">
+                            <i class="fas fa-ellipsis-h"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-9 col-12">
+                    <div class="header-top">
+                        <div class="header-top-area">
+                            <ul class="left lab-ul">
+                                <li>
+                                    <i class="icofont-ui-call"></i> <span>{{company_data.phones}}</span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-map-marker-alt"></i> {{company_data.address}}
+                                </li>
+                            </ul>
+                            <ul class="social-icons lab-ul d-flex">
+                                <li>
+                                    <a href="#"><i class="fab fa-facebook-messenger"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fab fa-vimeo-v"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fab fa-skype"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fas fa-wifi"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="header-bottom" style='background-color: transparent'>
+
+                        <div class="header-wrapper" style='margin-left:100px'>
+                            <div class="menu-area justify-content-between w-100">
+                                <ul class="menu lab-ul">
+                                    <li>
+                                        <a href="index.html">Home</a>
+                                    </li>
+                                    <li>
+                                        <a href="about.html">About</a>
+                                    </li>
+                                    <li>
+                                        <a href="#0">Categray</a>
+                                        <ul class="submenu">
+                                            <li><a href="events.html">Azkar</a></li>
+                                            <li><a href="events.html">Doaa</a></li>
+                                            <li><a href="events.html">Quran</a></li>
+                                            <li><a href="events.html">Ahades</a></li>
+                                            <li><a href="events.html">Salaah</a></li>
+                                            
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#0">Blog</a>
+                                        <ul class="submenu">
+                                            <li><a href="events.html">Blog</a></li>
+                                           
+                                            
+                                        </ul>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="#0">Pages</a>
+                                        <ul class="submenu">
+                                       
+                                            <li><a href="coming-soon.html">Coming-soon</a></li>
+                                            <li><a href="coming-soon.html">Profile</a></li>
+                                            <li><a href="registration.html">Registration</a></li>
+                                            <li><a href="login.html">Login</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="contact.html">Contact</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header Section Ends Here-->
+
+
+
+
+{% block body %}
+
+
+{% endblock body %}
+
+
+
+
+
+    <!-- Footer Section start here -->
+    <footer class="footer-section" style="background-image: url(assets/images/bg-images/footer-bg.png);">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row g-3 justify-content-center g-lg-0">
+                    <div class="col-lg-4 col-sm-6 col-12">
+                        <div class="footer-top-item lab-item">
+                            <div class="lab-inner">
+                                <div class="lab-thumb">
+                                    <img src="{% static 'assets/images/footer/footer-top/01.png' %}" alt="Phone-icon">
+                                </div>
+                                <div class="lab-content">
+                                    <span>Phone Number : {{company_data.phones}}</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 col-12">
+                        <div class="footer-top-item lab-item">
+                            <div class="lab-inner">
+                                <div class="lab-thumb">
+                                    <img src="{% static 'assets/images/footer/footer-top/02.png' %}" alt="email-icon">
+                                </div>
+                                <div class="lab-content">
+                                    <span>Email : mohamedabdel@gmail.com</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 col-12">
+                        <div class="footer-top-item lab-item">
+                            <div class="lab-inner">
+                                <div class="lab-thumb">
+                                    <img src="{% static 'assets/images/footer/footer-top/03.png' %}" alt="location-icon">
+                                </div>
+                                <div class="lab-content">
+                                    <span>Address : {{company_data.address}}</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-middle padding-tb tri-shape-3">
+            <div class="container">
+                
+
+
+
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="footer-bottom-content text-center">
+                            <p>&copy;2023 <a href="index.html">{{company_data.name}}</a> .</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section end here -->
+
+
+
+    <!-- scrollToTop start here -->
+    <a href="#" class="scrollToTop"><i class="icofont-bubble-up"></i><span class="pluse_1"></span><span
+            class="pluse_2"></span></a>
+    <!-- scrollToTop ending here -->
+
+
+    <script src="{% static 'assets/js/jquery.js' %}"></script>
+    <script src="{% static 'assets/js/fontawesome.min.js' %}"></script>
+    <script src="{% static 'assets/js/waypoints.min.js' %}"></script>
+    <script src="{% static 'assets/js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'assets/js/swiper.min.js' %}"></script>
+    <script src="{% static 'assets/js/circularProgressBar.min.js' %}"></script>
+    <script src="{% static 'assets/js/isotope.pkgd.min.js' %}"></script>
+    <script src="{% static 'assets/js/lightcase.js' %}"></script>
+    <script src="{% static 'assets/js/functions.js' %}"></script>
+</body>
+
+</html>
