@@ -43,7 +43,7 @@
                             <span></span>
                         </div>
                         <div class="logo">
-                            <a href="index.html">
+                            <a href="/">
                                 <img src="{{company_data.logo.url}}" style="width:400px; height:200px;" alt="logo">
                                 
                             </a>
@@ -89,7 +89,7 @@
                             <div class="menu-area justify-content-between w-100">
                                 <ul class="menu lab-ul">
                                     <li>
-                                        <a href="index.html">Home</a>
+                                        <a href="/">Home</a>
                                     </li>
                                     <li>
                                         <a href="about.html">About</a>
@@ -97,12 +97,11 @@
                                     <li>
                                         <a href="#0">Categray</a>
                                         <ul class="submenu">
-                                            <li><a href="events.html">Azkar</a></li>
-                                            <li><a href="events.html">Doaa</a></li>
-                                            <li><a href="events.html">Quran</a></li>
-                                            <li><a href="events.html">Ahades</a></li>
-                                            <li><a href="events.html">Salaah</a></li>
+                                        {% for object in categorys %}
+                                        
+                                            <li><a href="categorys/{{object.id}}">{{object}}</a></li>
                                             
+                                        {% endfor %} 
                                         </ul>
                                     </li>
                                     <li>

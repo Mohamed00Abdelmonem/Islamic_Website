@@ -1,8 +1,9 @@
 from django.urls import path
-from .views import category
+from .views import MainTopicList, TopicDetail
 
 
 urlpatterns = [
-    path('', category),
+    path('<int:pk>', MainTopicList.as_view()),
+    path('topic/<int:pk>', TopicDetail.as_view()),
 
 ]
